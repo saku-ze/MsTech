@@ -9,6 +9,55 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
+    <style>
+
+        main #zhuye{
+            background: url('{{ url_for('static', filename='img/head_bg.jpg') }}') no-repeat ;
+            height: 600px;
+        }
+
+        .slid_pic ul li:nth-child(1){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_pic1.jpg') }}');
+            background-size: contain;
+            transform: rotateY(0) translateZ(400px) rotateY(180deg);
+        }
+        .slid_pic ul li:nth-child(2){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_pic2.jpg') }}');
+            background-size: contain;
+            transform: rotateY(45deg) translateZ(400px) rotateY(180deg);
+        }
+        .slid_pic ul li:nth-child(3){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_pic3.jpg') }}');
+            background-size: contain;
+            transform: rotateY(90deg ) translateZ(400px) rotateY(180deg);
+        }
+        .slid_pic ul li:nth-child(4){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_rgzn.jpg') }}');
+            background-size: contain;
+            transform: rotateY(135deg) translateZ(400px) rotateY(180deg);
+        }
+        .slid_pic ul li:nth-child(5){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_sjwj1.jpg') }}');
+            background-size: contain;
+            transform: rotateY(180deg) translateZ(400px) rotateY(180deg);
+        }
+        .slid_pic ul li:nth-child(6){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_sjwj2.jpg') }}');
+            background-size: contain;
+            transform: rotateY(225deg) translateZ(400px) rotateY(180deg);
+        }
+        .slid_pic ul li:nth-child(7){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_unity1.jpg') }}');
+            background-size: contain;
+            transform: rotateY(270deg) translateZ(400px) rotateY(180deg);
+        }
+        .slid_pic ul li:nth-child(8){
+            background: url('{{ url_for('static', filename='img/slid_pic/slid_unity2.jpg') }}');
+            background-size: contain;
+            transform: rotateY(315deg) translateZ(400px) rotateY(180deg);
+        }
+    </style>
+
 </head>
 <body>
     <!-- 头部导航栏 -->

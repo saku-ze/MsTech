@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        table{
+            display: block;
+            min-height: 2000px;
+        }
+        .container tr{
+            width: 100%;
+            height: 300px;
+        }
+        .container tr td{
+            width: 270px;
+            height: 300px;
+        }
+        .container tr td img{
+            width: 270px;
+            height: 250px;
+        }
+        .container tr td .name{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .container tr td .zhiwu{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <table class="container" cellspacing="24px">
+        <tr>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/lj.jpg') }}" alt="">
+                <span class="name">刘晶</span>
+                <span class="zhiwu">指导老师</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/xy.jpg') }}" alt="">
+                <span class="name">肖垚</span>
+                <span class="zhiwu">行政组长</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/wyy.jpg') }}" alt="">
+                <span class="name">万杨洋</span>
+                <span class="zhiwu">技术组长</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/wb.jpg') }}" alt="">
+                <span class="name">吴彪</span>
+                <span class="zhiwu">前技术组长</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/cmm.jpg') }}" alt="">
+                <span class="name">陈秘秘</span>
+                <span class="zhiwu">前行政组长</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/wyq.jpg') }}" alt="">
+                <span class="name">王亚琦</span>
+                <span class="zhiwu">前行政组长</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/zc.jpg') }}" alt="">
+                <span class="name">曾聪</span>
+                <span class="zhiwu">前行政组长</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/tcx.jpg') }}" alt="">
+                <span class="name">谭楚雄</span>
+                <span class="zhiwu">前技术组长</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/yf.png') }}" alt="">
+                <span class="name">杨帆</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/lsc.jpg') }}" alt="">
+                <span class="name">兰世聪</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/bh.jpg') }}" alt="">
+                <span class="name">白鹤</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/wns.jpg') }}" alt="">
+                <span class="name">韦尼斯</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/rl.jpg') }}" alt="">
+                <span class="name">阮龙</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/wwl.jpg') }}" alt="">
+                <span class="name">王文龙</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/wh.jpg') }}" alt="">
+                <span class="name">王浩沣</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/wr.jpg') }}" alt="">
+                <span class="name">伍让</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/ybm.jpg') }}" alt="">
+                <span class="name">杨斌铭</span>
+                <span class="zhiwu">18级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/sr.jpg') }}" alt="">
+                <span class="name">苏睿</span>
+                <span class="zhiwu">19级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/lyx.jpg') }}" alt="">
+                <span class="name">梁铀湘</span>
+                <span class="zhiwu">19级成员</span>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='img/members/mx.png') }}" alt="">
+                <span class="name">马祥</span>
+                <span class="zhiwu">19级成员</span>
+            </td>
+        </tr>
+        <!-- <tr>
+            <td>
+                <img src="" alt="">
+                <span class="name"></span>
+                <span class="zhiwu"></span>
+            </td>
+            <td>
+                <img src="" alt="">
+                <span class="name"></span>
+                <span class="zhiwu"></span>
+            </td>
+            <td>
+                <img src="" alt="">
+                <span class="name"></span>
+                <span class="zhiwu"></span>
+            </td>
+            <td>
+                <img src="" alt="">
+                <span class="name"></span>
+                <span class="zhiwu"></span>
+            </td>
+        </tr> -->
+    </table>
+</body>
+</html>

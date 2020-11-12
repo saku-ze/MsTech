@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS TECH</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <header>
+        <section class="container" id="head">
+            <img class="head_logo_img" src="{{ url_for('static', filename='img/logo.png') }}" alt="MS TECH">
+            <ul class="head_nav r">
+                <li>
+                    <a href="#news" class="scroll">组内动态</a>
+                </li>
+                <li>
+                    <a href="#project" class="scroll">作品展示</a>
+                </li>
+                <li>
+                    <a href="#members" class="scroll">组内成员</a>
+                </li>
+                <li>
+                    <a href="#join" class="scroll">了解招新</a>
+                </li>
+                <li>
+                    <a href="#banquan" class="scroll">联系方式</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- 滚动图片 -->
+        <section id="zhuye" class="container_fulid">
+            <div class="slid_pic">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 组内要闻 -->
+        <section id="news" class="container clear">
+            <h2>组内要闻</h2>
+            <ul>
+                <li>
+                    <div class="top_img">
+                        <img src="{{ url_for('static', filename='img/news/lihui.jpg') }}" alt="技术例会">
+                    </div>
+                    <div class="title">
+                        <h3>18、19级技术例会暨20级入组第一次会议</h3>
+                    </div>
+                    <div class="xiangqing">
+                        <p class="news_detail">
+                            11月7日，MS tech技术例会照常举行，会上阮龙分享vue的用法，同时此次例会也是20级新生入组的第一次会议。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top_img">
+                        <img src="{{ url_for('static', filename='img/news/zjtd.jpg') }}" alt="字节跳动">
+                    </div>
+                    <div class="title">
+                        <h3>17级组员 吴彪 顺利进入字节跳动实习。</h3>
+                    </div>
+                    <div class="xiangqing">
+                        <p class="news_detail">
+                        近日，17级组员吴彪，顺利通过了多家公司的笔试面试，顺利拿到了字节跳动和百度的offer，为学弟学妹们树立了良好的榜样。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top_img">
+                        <img src="{{ url_for('static', filename='img/news/taidibei.jpg') }}" alt="泰迪杯">
+                    </div>
+                    <div class="title">
+                        <h3>
+                            组员曾聪、吴彪、谭楚雄获得“泰迪杯”国家级三等奖。
+                        </h3>
+                    </div>
+                    <div class="xiangqing">
+                        <p class="news_detail">
+                            18级组员曾聪、谭楚雄，17级组员吴彪凭借“智慧政务”项目在第八届“泰迪杯”数据挖掘挑战赛中取得了国家级三等奖的优异成绩。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top_img">
+                        <img src="{{ url_for('static', filename='img/news/zhenshangshishu.jpg') }}" alt="枕上诗书">
+                    </div>
+                    <div class="title">
+                        <h3>
+                            陈秘秘、白鹤、吴彪在中国大学生计算机设计大赛中取得了国家级二等奖。
+                        </h3>
+                    </div>
+                    <div class="xiangqing">
+                        <p class="news_detail">
+                            18级白鹤，17级陈秘秘、吴彪凭借“枕上诗书”项目在2020年第十三届中国大学生计算机设计大赛中取得了国家级二等奖的优异成绩。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top_img">
+                        <img src="{{ url_for('static', filename='img/news/lanqiaobei.jpg') }}" alt="蓝桥杯">
+                    </div>
+                    <div class="title">
+                        <h3>组内多名成员在第十一届蓝桥杯大赛中取得了优异的成绩。</h3>
+                    </div>
+                    <div class="xiangqing">
+                        <p class="news_detail">
+                            18级曾聪获得省级一等奖，并进入国赛；18级谭楚雄、韦尼斯、王亚琦获得省级二等奖；王文龙获得省级三等奖。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top_img">
+                        <img src="{{ url_for('static', filename='img/news/chuangqingchun.jpg') }}" alt="创青春">
+                    </div>
+                    <div class="title">
+                        <h3>18级组员王浩沣在省级创业实践项目中取得创新春一等奖</h3>
+                    </div>
+                    <div class="xiangqing">
+                        <p class="news_detail">
+                            18级组员王浩沣凭借大学生知识付费平台项目，在省级创业实现项目中取得了创新春一等奖的优异成绩。
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <!-- 项目成果 -->
+        <section id="project" class="container_fluid">
+            <div class="container">
+                <h2>WHAT WE DO</h2>
+                <ul>
+                    <li>
+                        <img src="{{ url_for('static', filename='img/project/cg1.png') }}" alt="">
+                        <h3>枕上诗书</h3>
+                        <a href="#project">"枕上诗书"是一款集成了赏诗，搜诗，写诗的微信小程序</a>
+                    </li>
+                    <li>
+                        <img src="{{ url_for('static', filename='img/project/cg2.jpg') }}" alt="">
+                        <h3>僵尸企业画像</h3>
+                        <a href="{{ url_for('main.show_project', id=2) }}">"通过大数据的搜集分析，高效地辨分僵尸企业</a>
+                    </li>
+                    <li>
+                        <img src="{{ url_for('static', filename='img/project/cg3.jpg') }}\" alt="">
+                        <h3>会议管理系统</h3>
+                        <a href="#project">一款简单方便地预约会议室的微信小程序</a>
+                    </li>
+                    <li>
+                        <img src="{{ url_for('static', filename='img/project/cg4.jpg') }}" alt="">
+                        <h3>虚拟民族村</h3>
+                        <a href="#project">“虚拟民族村”是一个拥有民族信息与可视化等完整功能的信息可视系统，具有趣味性，旨在让民族信息触手可及。</a>
+                    </li>
+                </ul>
+                <label class="allproject_btn">
+                    <a href="#project">all projects</a>
+                </label>
+            </div>
+        </section>
+
+
+        <!-- 组内成员 -->
+        <section id="members" class="container">
+            <h2>组内成员</h2>
+            <ul>
+                <li>
+                    <img src="{{ url_for('static', filename='img/members/lj.jpg') }}" alt="">
+                    <h4 class="name">刘晶</h4>
+                    <p>指导老师 <a href="https://www.x-mol.com/university/faculty/110077"> 简介</a></p>
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='img/members/xy.jpg') }}" alt="">
+                    <h4 class="name">肖垚</h4>
+                    <p>行政组长</p>
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='img/members/wyy.jpg') }}" alt="">
+                    <h4 class="name">万杨洋</h4>
+                    <p>技术组长</p>
+                </li>
+            </ul>
+            <label class="allproject_btn">
+                <a href="{{ url_for('main.members') }}">all members</a>
+            </label>
+        </section>
+
+        <!-- 招新 -->
+        <section id="join" class="container">
+
+        </section>
+
+        <!-- 发送申请区域 -->
+        <section id="tijiao" class="container_fluid">
+            <h3>Let's Make Awesome Things, Together.</h3>
+            <p>If you are interested in computers and codes, if you want to get a high salary, marry Bai Fumei and get to the <br>top of your life after graduation, join us</p>
+            <label class="allproject_btn">
+                <a href="https://campus.new-thread.com/">Send Application</a>
+            </label>
+        </section>
+
+        <!-- 联系方式与版权 -->
+        <section id="banquan" class="container_fluid">
+            <div class="container">
+                <p>联系方式：刘晶老师    QQ:18490453 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    肖垚(行政组长)    QQ:1511074830</p>
+                <p>地址：中南民族大学9栋教学楼507室</p>
+                <p>版权所有：中南民族大学新思路实验室MSTECH组</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

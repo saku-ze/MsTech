@@ -1,0 +1,300 @@
+/* 跳转锚点过渡效果 */
+html {
+    scroll-behavior: smooth;
+}
+
+
+main #zhuye{
+    background: url('../images/head_bg.jpg') no-repeat ;
+    height: 600px;
+}
+
+/* 主页图片旋转 */
+.slid_pic{
+    width: 100%; height: 800px; margin: 0 auto;
+    perspective: 400px;
+    perspective-origin:center ;
+    overflow: hidden;
+}
+
+.slid_pic ul{
+    display: block;
+    width: 340px; height: 226px;
+    margin: 100px auto;
+    position: relative;
+    transform-style: preserve-3d;
+
+    animation: picMove linear 15s infinite;
+}
+@keyframes picMove{
+    0%{transform: rotateY(0);}
+    100%{transform: rotateY(360deg);}
+}
+
+.slid_pic ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    /* box-shadow: grey 0 0 3px;  */
+}
+.slid_pic ul li:nth-child(1){
+    background: url('../images/slid_pic/slid_pic1.jpg');
+    background-size: contain;
+    transform: rotateY(0) translateZ(400px) rotateY(180deg);
+}
+.slid_pic ul li:nth-child(2){
+    background: url('../images/slid_pic/slid_pic2.jpg');
+    background-size: contain;
+    transform: rotateY(45deg) translateZ(400px) rotateY(180deg);
+}
+.slid_pic ul li:nth-child(3){
+    background: url('../images/slid_pic/slid_pic3.jpg');
+    background-size: contain;
+    transform: rotateY(90deg ) translateZ(400px) rotateY(180deg);
+}
+.slid_pic ul li:nth-child(4){
+    background: url('../images/slid_pic/slid_rgzn.jpg');
+    background-size: contain;
+    transform: rotateY(135deg) translateZ(400px) rotateY(180deg);
+}
+.slid_pic ul li:nth-child(5){
+    background: url('../images/slid_pic/slid_sjwj1.jpg');
+    background-size: contain;
+    transform: rotateY(180deg) translateZ(400px) rotateY(180deg);
+}
+.slid_pic ul li:nth-child(6){
+    background: url('../images/slid_pic/slid_sjwj2.jpg');
+    background-size: contain;
+    transform: rotateY(225deg) translateZ(400px) rotateY(180deg);
+}
+.slid_pic ul li:nth-child(7){
+    background: url('../images/slid_pic/slid_unity1.jpg');
+    background-size: contain;
+    transform: rotateY(270deg) translateZ(400px) rotateY(180deg);
+}
+.slid_pic ul li:nth-child(8){
+    background: url('../images/slid_pic/slid_unity2.jpg');
+    background-size: contain;
+    transform: rotateY(315deg) translateZ(400px) rotateY(180deg);
+}
+
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    line-height: 100px;
+}
+/* 新闻部分 */
+#news{
+    background: rgb(245, 245, 245);
+    height: 950px;
+}
+#news ul{
+    width: 100%;
+    overflow: hidden;
+}
+#news ul li{
+    width: 373px;
+    height: 400px;
+    float: left;
+    border-top: rgb(178, 34, 34) 5px solid;
+    margin-bottom: 50px;
+    transition: .5s;
+}
+#news ul li:hover{
+    transform: translateY(-3px);
+    box-shadow:  0 5px 10px 3px;
+}
+#news ul li:nth-child(2){
+    margin:0 40px 0 40px;}
+#news ul li:nth-child(5){
+    margin:0 40px 0 40px;}
+#news ul li .top_img{
+    width: 100%;
+    height: 180px;
+}
+#news ul li .top_img img{
+    width: 373px;
+    height: 190px;
+}
+#news ul li .title{  
+    width: 100%;
+    height: 80px;
+}
+#news ul li .title h3{
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+#news ul li .xiangqing{
+    width: 100%;
+    height: 140px;
+}
+#news ul li .xiangqing .news_detail{
+    color: black;
+    text-indent: 2em;
+    text-align: left;
+}
+
+
+/* 项目成果部分 */
+#project{
+    height: 500px;
+    background: rgb(230, 230, 230);
+}
+#project .container ul{
+    height: 300px;
+}
+#project .container ul li{
+    display: block;
+    height: 300px;
+    float: left;
+    width: 270px;
+}
+#project .container ul li img{
+    width: 270px;height: 180px;
+}
+#project .container ul li h3{
+    font-size: 28px;
+    text-align: center;
+    line-height: 45px;
+}
+#project .container ul li a{
+    text-indent: 2em;
+    font-size: 16px;
+    color: blue;
+    text-align: center;
+}
+#project .container ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+#project .container ul li:nth-child(1),#project .container ul li:nth-child(2),#project .container ul li:nth-child(3){
+    margin-right: 40px;
+}
+#project .container label{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 30px auto; 
+    background: green;
+    border-radius: 20px;
+}
+#project .container label a{
+    display: block;
+    width: 100%; height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 组内成员 */
+#members{
+    height: 600px;
+}
+#members ul{
+    height: 400px;
+}
+#members ul li{
+    display: block;
+    height: 400px;
+    float: left;
+    width: 380px;
+}
+#members ul li:nth-child(1),#members ul li:nth-child(2){
+    margin-right: 30px;
+}
+#members ul li img{
+    width:380px ;
+    height: 300px;
+}
+#members ul li .name{
+    line-height: 40px;
+    text-align: center;
+    font-size: 28px;
+}
+#members ul li p{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+#members ul li p a{
+    color: blue;
+}
+#members ul li p a:hover{
+    color: red;
+}
+
+#members label{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 30px auto; 
+    background: green;
+    border-radius: 20px;
+}
+#members label a{
+    display: block;
+    width: 100%; height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* 招新区域 */
+#jion{
+    height: 500px;
+}
+
+/* 发送申请区域 */
+#tijiao{
+    height: 350px;
+    background: rgb(0, 0, 128);
+}
+#tijiao h3,p{
+    text-align: center;
+    color: white;
+}
+#tijiao h3{
+    font-size: 35px;
+    padding-top: 50px;
+}
+#tijiao p{
+    font-size: 16px;
+    margin-top: 50px;
+}
+#tijiao label{
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 30px auto; 
+    background: green;
+    border-radius: 20px;
+}
+#tijiao label a{
+    display: block;
+    width: 100%; height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 联系方式与版权*/
+#banquan{
+    height: 300px;
+    background: rgb(20, 20, 20);
+}
+#banquan .container{
+    padding-top: 50px;
+}
+#banquan .container p{
+    text-align: left;
+    line-height: 30px;
+    font-size: 18px;
+    color: white;
+}

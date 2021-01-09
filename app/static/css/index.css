@@ -141,6 +141,7 @@ h2{
 /* 项目成果部分 */
 #project{
     height: 500px;
+    min-width: 1200px;
     background: rgb(230, 230, 230);
 }
 #project .container ul{
@@ -253,6 +254,7 @@ h2{
 /* 发送申请区域 */
 #tijiao{
     height: 350px;
+    min-width: 1200px;
     background: rgb(0, 0, 128);
 }
 #tijiao h3,p{
@@ -287,6 +289,7 @@ h2{
 /* 联系方式与版权*/
 #banquan{
     height: 300px;
+    min-width: 1200px;
     background: rgb(20, 20, 20);
 }
 #banquan .container{
